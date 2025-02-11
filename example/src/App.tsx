@@ -1,12 +1,10 @@
 import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from '@onekey/check-biometric-auth-changed';
-
-const result = multiply(3, 7);
+import { checkBiometricAuthChanged } from '@onekey/check-biometric-auth-changed';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Result: {checkBiometricAuthChanged()}</Text>
     </View>
   );
 }

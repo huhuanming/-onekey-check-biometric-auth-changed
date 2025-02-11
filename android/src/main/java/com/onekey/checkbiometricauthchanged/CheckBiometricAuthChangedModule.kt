@@ -13,8 +13,8 @@ class CheckBiometricAuthChangedModule(reactContext: ReactApplicationContext) :
 
   // Example method
   // See https://reactnative.dev/docs/native-modules-android
-  override fun multiply(a: Double, b: Double): Double {
-    return a * b
+  override fun check(): Boolean {
+    return false
   }
 
   companion object {
